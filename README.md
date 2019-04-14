@@ -1,13 +1,10 @@
-# Live eCommerce - Teste para PHP
+# Live eCommerce
 
 [![TravisCI][icon-travisci]][link-travisci]
 [![Code Coverage][icon-codecov]][link-codecov]
 
 Este repositório contém uma implementação básica de coleções. Coleções armazenam dados pelo esquema de chave-valor, onde um valor é representado por uma chave.
 
-## Teste
-
-Este é um teste para a vaga de desenvolvedor de PHP, na Live eCommerce. Assumimos que se você souber resolver os problemas deste teste, estará apto para assumir responsabilidades maiores.
 
 ## Como fazer?
 
