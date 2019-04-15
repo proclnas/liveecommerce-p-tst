@@ -43,7 +43,7 @@ class FileCollectionTest extends TestCase
      * @depends dataCanBeAdded
      */
     public function collectionShouldReceiveOnlyIteratorImplementation()
-    {                      
+    {
         $collection = new FileCollection();
         $collection->set('modern-file-1', '/foo/bar');
         $this->assertEquals(0, $collection->count());

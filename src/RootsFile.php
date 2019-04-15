@@ -5,7 +5,7 @@ namespace Live\Collection;
 /**
  * Modern File
  * Reads a file in the roots way
- * 
+ *
  * @package Live\Collection
  */
 class RootsFile implements \Iterator
@@ -38,20 +38,20 @@ class RootsFile implements \Iterator
      */
     protected $fileName;
 
-    function __construct($fileName) 
+    public function __construct($fileName)
     {
         $this->fp = fopen($fileName, 'r');
         $this->fileName = $fileName;
         $this->key = 0;
     }
 
-    function __destruct()
+    public function __destruct()
     {
         fclose($this->fp);
     }
 
     public function current()
-    {       
+    {
         return $this->current;
     }
 
@@ -60,9 +60,9 @@ class RootsFile implements \Iterator
         return $this->key;
     }
 
-    public function next() 
+    public function next()
     {
-        if ($this->valid()){
+        if ($this->valid()) {
             $this->current = fgets($this->fp);
             $this->key++;
         }
@@ -77,5 +77,5 @@ class RootsFile implements \Iterator
     public function valid(): bool
     {
         return !feof($this->fp);
-    }    
+    }
 }
