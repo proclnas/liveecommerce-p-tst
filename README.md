@@ -75,8 +75,8 @@ Para executar os testes, utilize o comando, na raiz do projeto:
 $ composer test
 ```
 
-[icon-travisci]: https://img.shields.io/travis/liveecommerce/php-test.svg?style=flat-square
-[icon-codecov]: https://img.shields.io/codecov/c/github/liveecommerce/php-test.svg?style=flat-square
+[icon-travisci]: https://img.shields.io/travis/proclnas/liveecommerce-p-tst.svg?style=flat-square
+[icon-codecov]: https://img.shields.io/codecov/c/github/proclnas/liveecommerce-p-tst.svg?style=flat-square
 
-[link-travisci]: https://travis-ci.org/liveecommerce/php-test
-[link-codecov]: https://codecov.io/gh/liveecommerce/php-test
+[link-travisci]: https://travis-ci.org/proclnas/liveecommerce-p-tst
+[link-codecov]: https://codecov.io/gh/proclnas/liveecommerce-p-tst
