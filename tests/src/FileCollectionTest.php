@@ -89,4 +89,42 @@ class FileCollectionTest extends TestCase
 
         $this->assertEquals(3, $collection->count());
     }
+
+    /**
+     * @test
+     * @depends dataCanBeAdded
+     */
+    public function addedItemShouldExistInCollection()
+    {
+        $collection = new FileCollection();
+        $collection->set('file1', new RootsFile($this->tmpFile));
+
+        $this->assertTrue($collection->has('file1'));
+    }
+
+    /**
+     * @test
+     * @depends collectionWithItemsShouldReturnValidCount
+     */
+    public function collectionCanBeCleaned()
+    {
+        $collection = new FileCollection();
+        $collection->set('file1', new RootsFile($this->tmpFile));
+        $this->assertEquals(1, $collection->count());
+
+        $collection->clean();
+        $this->assertEquals(0, $collection->count());
+    }
+
+    /**
+     * @test
+     * @depends objectCanBeConstructed
+     */
+    public function inexistentIndexShouldReturnDefaultValue()
+    {
+        $collection = new FileCollection();
+
+        $this->assertNull($collection->get('index1'));
+        $this->assertEquals('defaultValue', $collection->get('index1', 'defaultValue'));
+    }
 }
