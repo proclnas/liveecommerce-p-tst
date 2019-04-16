@@ -3,8 +3,6 @@
 namespace Live\Collection;
 
 use PHPUnit\Framework\TestCase;
-use Live\Collection\ModernFile;
-use Live\Collection\RootsFile;
 use \org\bovigo\vfs\vfsStream;
 
 class FileCollectionTest extends TestCase
